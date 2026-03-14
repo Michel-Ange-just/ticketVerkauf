@@ -1,30 +1,28 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-.kotlin
+# TicketVerkauf – Simulation eines Ticketverkaufs (Java & Synchronisation)
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+Dieses Projekt ist eine kleine Java‑Anwendung, die den **Verkauf von Tickets** für ein Event simuliert.  
+Der Schwerpunkt liegt auf **Nebenläufigkeit (Concurrency)** und **Synchronisation**, um typische Probleme wie Race Conditions zu vermeiden.
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+---
 
-### VS Code ###
-.vscode/
+##  Ziel des Projekts
 
-### Mac OS ###
-.DS_Store
+- Mehrere Käufer (Threads) versuchen gleichzeitig Tickets zu kaufen.
+- Gemeinsamer Zustand (Ticketanzahl) wird korrekt geschützt.
+- Einsatz von Java‑Synchronisationsmechanismen wie:
+  - `synchronized`
+  - `ReentrantLock`
+  - oder anderen Lock‑Konzepten
+- Sicherstellen, dass nie mehr Tickets verkauft werden als verfügbar sind.
+
+---
+
+##  Verwendete Java‑Konzepte
+
+- Threads (`Thread`, `Runnable`)
+- Kritische Abschnitte
+- Synchronisation & Monitore
+- Locks (z. B. `ReentrantLock`)
+- Race Conditions und deren Vermeidung
+
+
